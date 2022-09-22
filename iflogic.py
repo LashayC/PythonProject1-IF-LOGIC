@@ -54,11 +54,19 @@ def main():
     # print which villain based on evil_rating - 3 for indexing.
     print(f"On the disney villain scale your rating is {disney_villain_list[evil_rating - 3]}")
 
+    # dictionary with villain rating, name, and description
+    villain_dictionary = {
+        "Captain Hook": ["Number 7 of 7", "Peter Pan", "You are only trying to make right what was wrong. I mean, you're the one missing an arm! You don't go out looking for trouble per se, but if it comes you're way you're going to see it through!"], 
+        "Maleficient": ["Number 6 of 7", "Sleeping Beauty", "Every so often you cause a little mischief, but thats no reason not to invite you to the party! Afterall, malice is just a another word. Only when you're scorned is when the real claws come out."]
+        }
+
 ##possible: add and print summary of each villain
 ##dictionary: key is villain name, value is summary?
 ##create function that gets villain based on evil_rating
 ##create dictionary, key is the evil_rating: value is list [villain name, villain summary]
 ##condense each quiz question into single function whose parameter is a list of input questions that'll run one by one
+##add color
+##add word art or disney art
 
 #calls main
 if __name__ == "__main__":
