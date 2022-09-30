@@ -22,7 +22,6 @@ def valid_response_chk(res):
         return res
     while res != "a" and res != "b" and res != "c":
         res = input("Please choose from given options: ").lower()
-        print("new res " + res)
     return res
 
 # function for assigning villain
@@ -107,7 +106,11 @@ def main():
     villain = assign_villain(evil_rating)
 
     # print villain variable
-    print(f"The disney villain you are is {villain} of {villain_dict[villain]['movie']} with the rating {villain_dict[villain]['rating']}. {villain_dict[villain]['summary']}")
+    print(f"""
+    The disney villain you are is {villain} of {villain_dict[villain]['movie']}. 
+    You have the rating {villain_dict[villain]['rating']}. 
+    Summary: {villain_dict[villain]['summary']}
+    """)
 
 
 #calls main
